@@ -19,7 +19,6 @@ Log
 
 REST_reference_v1.0_20170411
       [1] Retain unselected channels (e.g. EMG, EOG, band channels etc.), while saving re-reference EEG data.
-
 REST_reference_v1.1_20190819
       [1] Calculate leadfield at once, based on canonical concentric-three-spheres head model.
       [2] remove the leadfield.exe.
