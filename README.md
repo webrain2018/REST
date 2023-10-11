@@ -11,6 +11,7 @@ Written by Li Dong (Li_dong729@163.com) and Shiang Hu (hushiang@126.com)
 Date: Aug. 19, 2019
 
 % ---------------------------------------------------------------------------------------------
+
 ######################Please cite this toolbox as:###############################
 
 Li Dong*, Fali Li, Qiang Liu, Xin Wen, Yongxiu Lai, Peng Xu and Dezhong Yao*. MATLAB Toolboxes for Reference Electrode Standardization Technique (REST) of Scalp EEG. Frontiers in Neuroscience,  2017:11(601).
@@ -35,6 +36,7 @@ REST_reference_v1.2_20200818
           - export back to EEGLAB was unclear and half broken
           
 % -----------------------------------------------------------
+
 To install REST, download the zip file (linked above), unzip and place the folder in the 'plugins' folder of your existing EEGLAB installation (so something like ~/eeglab12_0_6b/plugins/REST_reference_v1.0/eegplugin_rest.m exists).
 
 To run REST, ensure that the correct EEGLAB folder is in your current Matlab path, and run 'eeglab' as a command from the Matlab Command Window.
@@ -42,6 +44,7 @@ To run REST, ensure that the correct EEGLAB folder is in your current Matlab pat
 Then, load data using EEGLAB, click 'REST'--> 'Re-referencing to REST'
 
 % -----------------------------------------------------------
+
 Re-referencing to REST steps:
   [1] Select original reference;';
       Average: average reference.';
@@ -64,4 +67,5 @@ Re-referencing to REST steps:
      (b) Select a lead field file (has been calculated and saved as *.txt/*.xls/*.xlsx/*.dat):';
          The size of lead field matrix should be No. of sources X No. channels';
  [5] Press button ''Save to EEGLAB'' to save the re-referencing data to workspace (ALLEEG).In EEGLAB, click ''Datasets''-->''*_REST''';
+ 
 % --------------------------------------------------------------
