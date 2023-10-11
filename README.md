@@ -67,17 +67,25 @@ Re-referencing to REST steps:
   [3] Retain unused channels?: if you want to keep unused channels in the data, check the box;';
   
   [4] If channel location has been imported in EEG.channlocs, Press button ''Run REST'' directly; OR you can selcet a lead field file, and then Press button ''Run REST'';
-  '    (a) Load channel location in EEGLAB';
+  '   
+  (a) Load channel location in EEGLAB';
+          
            Edit--> channel locations --> OK';
+          
            Default head model is a 3-concentric sphere head model,more details can be seen in Dong et al., 2017';.
+          
            headmodel.cond = [1,0.0125,1]';
+           
            headmodel.tissue = { ''brain'',''skull'', ''scalp'' }';
+           
            headmodel.r = [0.87,0.92,1]';
+   
     It calculates the leadfield matrix from the 3000 cortical dipoles (spherical equivalent dipoles, see 'corti869-3000dipoles.dat') and the newly given electrode array for the canonical concentric-three-spheres head model.The radii of the three concentri spheres are 0.87(inner radius of the skull), 0.92(outer radius of the skull) and 1.0(radius of the head), while the conductivities are 1.0(brain and scalp) and 0.0125 (skull). The electorde array shoved as *.txt ASCII files with their Cartesian x (the left ear is defined as -x axis),y (the nasion is the +y axis),z coordinates in three columns.
+   
     Noting that because the default sources/dipoles (concentric-three-spheres head model) are symmetric,if the left ear is defined as +x axis, it will generate same re-referencing results while the left ear is defined as -x axis.
 
-     (b) Select a lead field file (has been calculated and saved as *.txt/*.xls/*.xlsx/*.dat):';
-         The size of lead field matrix should be No. of sources X No. channels';
+   
+     (b) Select a lead field file (has been calculated and saved as *.txt/*.xls/*.xlsx/*.dat):'; The size of lead field matrix should be No. of sources X No. channels';
 
  [5] Press button ''Save to EEGLAB'' to save the re-referencing data to workspace (ALLEEG).In EEGLAB, click ''Datasets''-->''*_REST''';
  
