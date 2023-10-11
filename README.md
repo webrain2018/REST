@@ -79,8 +79,8 @@ Re-referencing to REST steps:
            headmodel.tissue = { ''brain'',''skull'', ''scalp'' }';
            
            headmodel.r = [0.87,0.92,1]';
-   
-    It calculates the leadfield matrix from the 3000 cortical dipoles (spherical equivalent dipoles, see 'corti869-3000dipoles.dat') and the newly given electrode array for the canonical concentric-three-spheres head model.The radii of the three concentri spheres are 0.87(inner radius of the skull), 0.92(outer radius of the skull) and 1.0(radius of the head), while the conductivities are 1.0(brain and scalp) and 0.0125 (skull). The electorde array shoved as *.txt ASCII files with their Cartesian x (the left ear is defined as -x axis),y (the nasion is the +y axis),z coordinates in three columns.
+
+It calculates the leadfield matrix from the 3000 cortical dipoles (spherical equivalent dipoles, see 'corti869-3000dipoles.dat') and the newly given electrode array for the canonical concentric-three-spheres head model.The radii of the three concentri spheres are 0.87(inner radius of the skull), 0.92(outer radius of the skull) and 1.0(radius of the head), while the conductivities are 1.0(brain and scalp) and 0.0125 (skull). The electorde array shoved as *.txt ASCII files with their Cartesian x (the left ear is defined as -x axis),y (the nasion is the +y axis),z coordinates in three columns.
    
     Noting that because the default sources/dipoles (concentric-three-spheres head model) are symmetric,if the left ear is defined as +x axis, it will generate same re-referencing results while the left ear is defined as -x axis.
 
